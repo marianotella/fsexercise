@@ -1,0 +1,17 @@
+version: '3'
+services:
+  nginx:
+    image: hitalos/laravel
+    container_name: fsexercise_app
+    volumes:
+    - ./:/var/www/:rw
+    command: sh -c "chmod 777 /var/www/run.sh && /var/www/run.sh"
+    ports:
+    - 8080:80
+    links:
+    - db
+  db:
+    image: mongo:latest
+    container_name: fsexercise_mongodb
+    volumes:
+    - /data/db
