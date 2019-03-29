@@ -24,9 +24,6 @@ Create a single page application that displays a list of items. These items must
 #### Runtime:
 Please submit the application with a defined stack (installing all required dependencies) using docker-compose. The application should count with a docker-compose.yml file that should allow us to run the application without the need of installing missing dependencies.
 
-### Demo
-[Go to DEMO Page](https://fsexercise.marianotella.com).
-
 #### Command
 - Go to project folder and run command "docker-compose up".
 - If run in daemon mode -d, the application doesn't work.
